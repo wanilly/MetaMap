@@ -40,6 +40,7 @@ public class ObjectMove : MonoBehaviour
         if (currposition <= minZ) {
             speed *= -1;
             currposition = minZ;
+            transform.Rotate(new Vector3(0, 180, 0));
         }
         else if (currposition >= maxZ) {
             speed *= -1;
